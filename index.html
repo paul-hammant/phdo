@@ -10,17 +10,56 @@ cover: false
 <hr class="stylish"/>
 
 <main class="home-main">
+  <div class="parent">
+    <p>I'm Paul Hammant, an Agile software delivery and development veteran. I haved helped improve many brown-field software delivery organizations and the occasional green-field startup</p>
+  </div>
+  <section id="visiting">
+    <details>
+      <summary>
+        <h2 class="home-page-heading">Me Visiting and Fact Finding</h2>
+      </summary>
+      <div class="parent">
+        <p>Contacting me by email is best to talk about any work I can do for your company: <a href="mailto:paul@hammant.org?subject=Consulting%20services%20for%20getting%20us%20to%20Trunk-Based%20Development,%20etc." target="_blank" rel="noopener">paul@hammant.org</a></p>
+        <p>I visit your enterprise software team, to help you change your branching model to <strong>Trunk-Based Development</strong> (TBD). I come to an understanding of how you develop and deploy software, with lots of questions to stakeholders and leaders,
+          and then come up with a plan that gets you to your goals. Other than Trunk-Based Development, areas for questions, recommendation (and training) often stray into:</p>
+        <ul>
+          <li><strong>Branch by Abstraction</strong> (I was the pioneer), and <strong>Feature Flags/Toggles</strong> (goes hand in hand)</li>
+          <li>A second pivot to a <strong>Monorepo</strong> design and optionally a <strong>directed graph build system like Buck or Bazel</strong></li>
+          <li>Regular <strong>DevOps</strong> aspects around how to engineer <strong>Infrastructure as Code (IaC)</strong>, and scaled <strong>Continuous Integration</strong> infra</li>
+          <li><strong>Agile enablement</strong> factors, including the flow of stories from backlog into development</li>
+          <li>Good <strong>Behavior Driven Development (BDD)</strong> phrasing for work - for the least amount of defects during development</li>
+          <li><strong>Speedy test automation</strong>, featuring the correct testing technologies and <strong>Service Virtualization</strong></li>
+          <li>economic benefits for the proposed changes</li>
+          <li>case studies that show the way, both industry ones and those I was pivotal for, myself</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+  <section id="assesments">
+    <details>
+      <summary>
+        <h2 class="home-page-heading">Me Giving Assessments and Presentations</h2>
+      </summary>
+      <div class="parent">
+        <p>I have performed many assessments over the years. The beginning of those was via <strong>ThoughtWorks</strong> (a well known consultancy), twelve years ago, bore the title <strong>Agile assessments</strong>. Later ThoughtWorks would sell <strong>Continuous Delivery (CD) assessments</strong>            as the techniques emerged and Jez Humble and Dave Farley’s CD book came out (that uses some of my diagrams). Most recently, ThoughtWorks sold <strong>DevOps assessments</strong>, extending the pieces that came before. Many of those were as
+          a ‘Principal Consultant’, but more recently some have been as a solo operator.</p>
+        <p>I have presented findings to CEOs, CIOs and executive teams. I have seen clients say ‘yes’ to everything I have recommended, and implement them. I have also seen clients struggle to implement changes as their commitments, constraints and old
+          habits put pressure on them to maintain the status quo. I have crafted my practice and honed my approach after tens of these assessments rather than break through to a higher-throughput place. Many times I have done follow-up visits to help
+          measure progress towards goals for clients that want to run the execution of the plan on their own.</p>
+      </div>
+    </details>
+  </section>
+
   {% for collection in site.collections %}
     {% if collection.docs.size > 0 %}
     <section id="posts">
       <details {% if collection.default_open %}open{% endif %}>
         <summary>
-          <h3 class="home-page-heading">{{ collection.title }}</h3>
+          <h2 class="home-page-heading">{{ collection.title }}</h2>
         </summary>
         <div class="parent">
           {% for post in collection.docs %}
           <div class="post-wrapper">
-            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m/%Y" }}</time>
             <a class="post-link" href="{{ post.url }}">
               {{ post.title }}
             </a>
@@ -31,4 +70,29 @@ cover: false
     </section>
     {% endif %}
   {% endfor %}
+  <section id="credentials">
+    <details>
+      <summary>
+        <h2 class="home-page-heading">My Credentials Recapped</h2>
+      </summary>
+      <div class="parent">
+        <ul>
+          <li>I lead the creation of the info portal <a href="https://TrunkBasedDevelopment.com" target="_blank" rel="noopener">TrunkBasedDevelopment.com</a></li>
+          <li>I am the person who has <a href="/about#trunk-based-development-again">written most about Trunk-Based Development, generally</a></li>
+          <li>I have implemented Trunk-Based Development migration plans for large enterprise development teams many times</li>
+          <li>I am the first person to write about <a href="/about#branch-by-abstraction-first-blogger">Branch by Abstraction</a>, which former colleagues Martin Fowler and Jez Humble went on to write about too.</li>
+          <li>I am able to help you move past simple Trunk Based Development and towards Google’s Monorepo design.</li>
+          <li>I know how to massively reduce your test automation times using <a href="https://martinfowler.com/articles/rise-test-impact-analysis.html" target="_blank" rel="noopener">Test Impact Analysis</a> (TIA)</li>
+          <li>I have previously had Snr. Director of Engineering (2x), Chief Science Officer and Head of Development roles (but have otherwise coded during and before/after work for twenty-eight years)</li>
+          <li>I have consulted inside Google (the <a href="https://mike-bland.com/2012/07/10/test-mercenaries.html" target="_blank" rel="noopener">Test Mercenaries</a> team), a few US banks, a famous US budget airline, retailers, fin-tech and other startups</li>
+          <li>I worked at the industry-leading ThoughtWorks (as mentioned), making my contributions to their canon</li>
+          <li>I co-created the industry standard web testing technology, <a href="https://www.seleniumhq.org/" target="_blank" rel="noopener">Selenium</a>, back in 2004</li>
+          <li>I co-created the <a href="/about#picocontainer-and-dependency-injection">first Dependency Injection Container that used Constructor Injection</a> in 2003</li>
+          <li>I and my materials are referenced in <a href="https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912" target="_blank" rel="noopener">Continuous Delivery</a>, <a href="https://www.amazon.com/Lean-Enterprise-Performance-Organizations-Innovate/dp/1449368425" target="_blank" rel="noopener">Lean Enterprise</a>, and <a href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/" target="_blank" rel="noopener">The DevOps Handbook</a> over the last seven years.</li>
+          <li>I <a href="https://paulhammant.com/" target="_blank" rel="noopener">have been blogging</a> about a wide range of software development topics since 2002</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
 </main>
