@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Trunk Correlated Practices Chart
+subtitle: A big chart of practices coupled to planned release cadences
 permalink: /Trunk-Correlated-Practices-Chart
 alias:
 - /Trunk-Correlated-Practices-Diagram/

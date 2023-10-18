@@ -10,6 +10,14 @@ cover: false
 <hr class="stylish"/>
 
 <main class="home-main">
+  <table class="image-block">
+    <tbody><tr>
+      <td><img src="/assets/phdo.png" alt="PH.DO"></td>
+      <td>
+        <h1 itemprop="headline" class="article__title">Paul Hammant's Delivery Optimization</h1>
+      </td>
+    </tr>
+    </tbody></table>
   <div class="parent">
     <p>I'm Paul Hammant, an Agile software delivery and development veteran. I haved helped improve many brown-field software delivery organizations and the occasional green-field startup</p>
   </div>
@@ -62,7 +70,7 @@ cover: false
           <div class="post-wrapper">
             <a class="post-link" href="{{ post.url }}">
               {{ post.title }}
-            </a>
+            </a>&nbsp;&nbsp;{{ post.subtitle}}
           </div>
           {% endfor %}
         </div>
